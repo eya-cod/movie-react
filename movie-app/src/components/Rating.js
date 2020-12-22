@@ -7,13 +7,13 @@ const Rating = ({ Rate, setRateFilter }) => {
       if (i <= x) {
         starsArray.push(
           <span onClick={()=>setRateFilter(i)} >
-            ★
+⭐
           </span>
         );
       } else {
         starsArray.push(
-          <span  >
-            ☆
+          <span onClick={()=>setRateFilter(i)} >
+            ★
           </span>
         );
       }
@@ -25,6 +25,7 @@ const Rating = ({ Rate, setRateFilter }) => {
 
 Rating.defaultProps = {
   setRateFilter: () => {},
+  Rate: 1
 };
 
 export default Rating;

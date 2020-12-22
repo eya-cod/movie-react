@@ -8,7 +8,7 @@ const Filter = ({ setTitleFilter, RateFilter, setRateFilter }) => {
         <input type="text" placeholder="Search for a movie..." 
         onChange={(e) => setTitleFilter(e.target.value)}/> 
         <div>
-        <Rating  RateFilter={RateFilter} setRateFilter={setRateFilter} />
+        <Rating Rate={RateFilter} setRateFilter={setRateFilter} />
         </div>
             </div>
     
