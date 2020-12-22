@@ -4,7 +4,7 @@ import MovieCard from './MovieCard'
 const MovieList = ({Movies, TitleFilter, RateFilter}) => {
     return (
         <div>
-        {Movies /*.filter((Movie)=>Movie.title.toLowerCase().includes(TitleFilter.toLowerCase().trim()) ) */
+        {Movies.filter((Movie)=>Movie.title.toLowerCase().includes(TitleFilter.toLowerCase().trim()) /*&& Movie.Rating==RateFilter*/ ) 
         .map((Movie,i) => <MovieCard Movie={Movie} key={i} />) }   
         </div>
     )

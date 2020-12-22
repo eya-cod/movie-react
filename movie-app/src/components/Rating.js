@@ -6,13 +6,13 @@ const Rating = ({ Rate, setRateFilter }) => {
     for (let i = 1; i <= 5; i++) {
       if (i <= x) {
         starsArray.push(
-          <span onChange={()=>setRateFilter(i) } >
+          <span onClick={()=>setRateFilter(i)} >
             ★
           </span>
         );
       } else {
         starsArray.push(
-          <span onChange={()=>setRateFilter(i) }>
+          <span  >
             ☆
           </span>
         );

@@ -9,7 +9,7 @@ import Filter from './components/Filter'
 
 function App() {
   const [TitleFilter, setTitleFilter] = useState('')
-  const [RateFilter, setRateFilter] = useState(0)
+  const [RateFilter, setRateFilter] = useState(1)
   const [Movies, setMovies] = useState([
     {
       title:'The Joker',
